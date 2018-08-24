@@ -1,0 +1,37 @@
+{
+    "msgParams": {
+        "meta": {
+            "type": "EiffelAnnouncementPublishedEvent",
+            "version": "1.1.0",
+            "tags": [],
+            "source": {
+                "domainId": "",
+                "host": "",
+                "name": "",
+                "uri": ""
+            },
+            "security": {
+                "sdm": {
+                    "authorIdentity": "required if sdm present",
+                    "encryptedDigest": "required if sdm present"
+                }
+            }
+        }
+    },
+    "eventParams": {
+        "data": {
+            "heading": "required",
+            "body": "required",
+            "uri" : "",
+            "severity": "required, can be anyone of MINOR,MAJOR,CRITICAL,BLOCKER,CLOSED,CANCELED ",
+            "customData": [{
+                "key": "required if customData present",
+                "value": "required if customData present"
+            }]
+        },
+        "links": [{
+            "type": "required if links present, can be anyOf CAUSE,CONTEXT,FLOW_CONTEXT,MODIFIED_ANNOUNCEMENT",
+            "target": "required if links present"
+        }]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "msgParams": {
+        "meta": {
+            "type": "EiffelServiceDeployedEvent",
+            "version": "1.0.0",
+            "tags": [
+
+            ],
+            "source": {
+                "domainId": "",
+                "host": "",
+                "name": "",
+                "uri": ""
+            },
+            "security": {
+                "sdm": {
+                    "authorIdentity": "required if sdm present",
+                    "encryptedDigest": "required if sdm present"
+                }
+            }
+        }
+    },
+    "eventParams": {
+        "data": {
+            "servicename": "required",
+            "instancename": "required",
+            "owner": "required",
+            "uri": "required",
+            "deploymentType": "",
+            "customData": [{
+                "key": "required if customData present",
+                "value": "required if customData present"
+            }]
+        },
+        "links": [{
+            "type": "required CONTEXT and CAUSE,ARTIFACT_DEPLOYED,FLOW_CONTEXT,SERVICE are optional",
+            "target": "required"
+        }]
+    }
+}

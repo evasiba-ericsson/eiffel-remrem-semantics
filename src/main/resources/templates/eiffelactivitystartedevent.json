@@ -1,0 +1,40 @@
+{
+    "msgParams": {
+        "meta": {
+            "type": "EiffelActivityStartedEvent",
+            "version": "1.1.0",
+            "tags": [
+
+            ],
+            "source": {
+                "domainId": "",
+                "host": "",
+                "name": "",
+                "uri": ""
+                }                ,
+                "security": {
+                    "sdm": {
+                        "authorIdentity": "required if sdm present",
+                        "encryptedDigest": "required if sdm present"
+                    }
+            }
+        }
+    },
+    "eventParams": {
+        "data": {
+            "executionUri": "",
+            "liveLogs": [{
+                "name": "required if livelogs present",
+                "uri": "required if livelogs present"
+            }],
+            "customData": [{
+                "key": "required if customData present",
+                "value": "required if customData present"
+            }]
+        },
+        "links": [{
+            "type": "required ACTIVITY_EXECUTION and CAUSE,CONTEXT,FLOW_CONTEXT,PREVIOUS_ACTIVITY_EXECUTION are optional",
+            "target": "required"
+        }]
+    }
+}

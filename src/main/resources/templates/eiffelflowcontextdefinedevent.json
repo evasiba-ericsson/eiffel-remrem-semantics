@@ -1,0 +1,40 @@
+{
+    "msgParams": {
+        "meta": {
+            "type": "EiffelFlowContextDefinedEvent",
+            "version": "1.1.0",
+            "tags": [
+
+            ],
+            "source": {
+                "domainId": "",
+                "host": "",
+                "name": "",
+                "uri": ""
+            },
+            "security": {
+                "sdm": {
+                    "authorIdentity": "required if sdm present",
+                    "encryptedDigest": "required if sdm present"
+                }
+            }
+        }
+    },
+    "eventParams": {
+        "data": {
+            "product": "",
+            "project": "",
+            "program": "",
+            "track": "",
+            "version": "",
+            "customData": [{
+                "key": "required if customData present",
+                "value": "required if customData present"
+            }]
+        },
+        "links": [{
+            "type": "required if links present ,can be anyOf CAUSE,CONTEXT,FLOW_CONTEXT",
+            "target": "required if links present"
+        }]
+    }
+}
