@@ -30,6 +30,7 @@
             <groupId>com.github.fge</groupId>
             <artifactId>json-schema-validator</artifactId>
             <scope>compile</scope>
+            <version>2.2.6</version>
             <exclusions>
                 <exclusion>
                     <artifactId>jackson-databind</artifactId>
@@ -49,8 +50,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <scope>compile</scope>
-            <version>1.1.7</version>
+            <scope>compile</scope>            
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
